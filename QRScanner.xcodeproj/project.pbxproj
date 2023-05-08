@@ -11,6 +11,11 @@
 		004C2EEC29ED47AE00E98AF6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004C2EEB29ED47AE00E98AF6 /* ContentView.swift */; };
 		004C2EEE29ED47AF00E98AF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 004C2EED29ED47AF00E98AF6 /* Assets.xcassets */; };
 		004C2EF129ED47AF00E98AF6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 004C2EF029ED47AF00E98AF6 /* Preview Assets.xcassets */; };
+		004C2EFB29ED485B00E98AF6 /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004C2EFA29ED485B00E98AF6 /* ScannerView.swift */; };
+		004C2EFD29ED4C1200E98AF6 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004C2EFC29ED4C1200E98AF6 /* Theme.swift */; };
+		004C2EFF29ED4DA300E98AF6 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004C2EFE29ED4DA300E98AF6 /* CameraView.swift */; };
+		004C2F0229ED4F8D00E98AF6 /* Permission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004C2F0129ED4F8D00E98AF6 /* Permission.swift */; };
+		00CBDD3B2A08FBE900BB35FA /* QRScannerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CBDD3A2A08FBE900BB35FA /* QRScannerDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		004C2EEB29ED47AE00E98AF6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		004C2EED29ED47AF00E98AF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		004C2EF029ED47AF00E98AF6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		004C2EFA29ED485B00E98AF6 /* ScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
+		004C2EFC29ED4C1200E98AF6 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		004C2EFE29ED4DA300E98AF6 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		004C2F0129ED4F8D00E98AF6 /* Permission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Permission.swift; sourceTree = "<group>"; };
+		00CBDD3A2A08FBE900BB35FA /* QRScannerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScannerDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +61,13 @@
 		004C2EE829ED47AE00E98AF6 /* QRScanner */ = {
 			isa = PBXGroup;
 			children = (
-				004C2EE929ED47AE00E98AF6 /* QRScannerApp.swift */,
 				004C2EEB29ED47AE00E98AF6 /* ContentView.swift */,
+				004C2EE929ED47AE00E98AF6 /* QRScannerApp.swift */,
+				004C2EFC29ED4C1200E98AF6 /* Theme.swift */,
 				004C2EED29ED47AF00E98AF6 /* Assets.xcassets */,
+				004C2F0029ED4F8700E98AF6 /* Model */,
 				004C2EEF29ED47AF00E98AF6 /* Preview Content */,
+				004C2EF729ED484400E98AF6 /* View */,
 			);
 			path = QRScanner;
 			sourceTree = "<group>";
@@ -65,6 +78,24 @@
 				004C2EF029ED47AF00E98AF6 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		004C2EF729ED484400E98AF6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				004C2EFA29ED485B00E98AF6 /* ScannerView.swift */,
+				004C2EFE29ED4DA300E98AF6 /* CameraView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		004C2F0029ED4F8700E98AF6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				004C2F0129ED4F8D00E98AF6 /* Permission.swift */,
+				00CBDD3A2A08FBE900BB35FA /* QRScannerDelegate.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +168,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				004C2EFB29ED485B00E98AF6 /* ScannerView.swift in Sources */,
+				004C2EFD29ED4C1200E98AF6 /* Theme.swift in Sources */,
+				004C2F0229ED4F8D00E98AF6 /* Permission.swift in Sources */,
 				004C2EEC29ED47AE00E98AF6 /* ContentView.swift in Sources */,
+				00CBDD3B2A08FBE900BB35FA /* QRScannerDelegate.swift in Sources */,
+				004C2EFF29ED4DA300E98AF6 /* CameraView.swift in Sources */,
 				004C2EEA29ED47AE00E98AF6 /* QRScannerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -195,7 +231,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -249,7 +285,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -270,11 +306,13 @@
 				DEVELOPMENT_TEAM = QH7853B55W;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera is required";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -282,6 +320,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.aybarsacar.QRScanner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -299,11 +340,13 @@
 				DEVELOPMENT_TEAM = QH7853B55W;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera is required";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -311,6 +354,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.aybarsacar.QRScanner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
